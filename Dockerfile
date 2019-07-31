@@ -7,11 +7,11 @@
 #     2019-07-22 - First Commit
 #
 # Usage:
-#   $ docker run -ti mrnonoss/Cloudump
+#   $ docker run -ti mrnonoss/cloudump
 #   # cloudump URL
 #-------------------------------------------------------
 FROM debian:stretch
-MAINTAINER Bruno BORDAS "bruno.bordas@gmx.com"
+LABEL maintainer="Bruno BORDAS <bruno.bordas@gmx.com>"
 
 #############################
 # Install Required Packages #
