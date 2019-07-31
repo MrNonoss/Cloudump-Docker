@@ -21,4 +21,7 @@ RUN apt-get update && apt-get full-upgrade -y && apt-get install python python-p
 RUN cd /home && git clone https://github.com/Oseid/Cloudump.git
 RUN echo "alias cloudump='python /home/Cloudump/cloudump.py'" | tee -a /root/.bashrc
 
+RUN groupadd -r cloudump && useradd -r -s /bin/false -g osint osint
+USER osint
+
 CMD ["/bin/bash"]
